@@ -25,7 +25,7 @@ download http://www.cocos.com/download
 `cocos new -l js WebGame`
 
 - copy frameworks to this project
-`cp -rf WebGame/frameworks game.1010/frameworks`
+`cp -rf WebGame/frameworks game.1010/`
 
 - try to run this project
 `cocos run -p web`
