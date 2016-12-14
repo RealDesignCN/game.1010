@@ -31,4 +31,4 @@ download http://www.cocos.com/download
 `cocos run -p web`
 
 - publish
-`cocos compile -p web -m release —advanced`
+`cocos compile -p web -m release --advanced`
