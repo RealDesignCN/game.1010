@@ -72,7 +72,6 @@ cc.game.onStart = function(){
 };
 
 
-//window.location.href.match('ookor')&&
 cc.game.run();
 
 
