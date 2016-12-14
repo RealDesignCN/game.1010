@@ -8,10 +8,6 @@ game.GameScene = cc.Scene.extend({
 
         var self = this;
 
-        if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-            window['Ads']['topAds']();
-        }
-
 
         this._gameLayer = new game.GameLayer();
         this.addChild(this._gameLayer);

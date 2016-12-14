@@ -17,12 +17,12 @@ game.MyLoaderLayer = cc.LayerColor.extend({
         var self = this;
         var winSize = cc.winSize;
 
-        var logo = new cc.Sprite(loaderRes.loading2_png);
-        logo.attr({
-            x : winSize.width / 2,
-            y : winSize.height * 0.5
-        });
-        this.addChild(logo);
+        //var logo = new cc.Sprite(loaderRes.loading2_png);
+        //logo.attr({
+        //    x : winSize.width / 2,
+        //    y : winSize.height * 0.5
+        //});
+        //this.addChild(logo);
 
 
 

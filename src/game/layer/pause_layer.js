@@ -10,11 +10,6 @@ game.PauseLayer = cc.Layer.extend({
         var winSize = cc.winSize;
         var self = this;
 
-        if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-            window['Ads']['fullViewAds']();
-        }
-
-
         cc.eventManager.addListener({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
             swallowTouches: true   ,       // true 为不向下传递
@@ -26,18 +21,12 @@ game.PauseLayer = cc.Layer.extend({
 
 
         var homeItem = new cc.MenuItemImage(res.home_png, res.home_png, res.home_png, function(){
-            if(game._Config.language == game._Enum.language.en){
-                window.location.href="http://ookor.com";
-            }else {
-                window.location.href="http://www.59600.com";
-            }
+
         }, this);
 
         var startItem = new cc.MenuItemImage(res.start_png, res.start_png, res.start_png, function(){
             self.removeFromLayer();
-            if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-                window['Ads']['topAds']();
-            }
+
 
         }, this);
 

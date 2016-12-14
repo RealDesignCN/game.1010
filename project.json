@@ -1,5 +1,5 @@
 {
-    "project_type": "javascript",
+    "project_type": "js",
 
     "debugMode" : 1,
     "showFPS" : true,

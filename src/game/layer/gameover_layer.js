@@ -10,10 +10,6 @@ game.GameOverLayer = cc.Layer.extend({
         var self = this;
         var winSize = cc.winSize;
 
-        if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-            window['Ads']['fullViewAds']();
-        }
-
         cc.log('data...', data);
         this.setHighScore('1010!_data', data);
 

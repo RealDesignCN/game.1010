@@ -17,18 +17,18 @@ game.LoaderScene = cc.Scene.extend({
         this.addChild(layer);
 
 
-        cc.loader.load(loadingRes.loading_png, function(err, results){
-            if(err){
-                cc.log("Failed to load %s.", loadingRes.loading_png);
-                return;
-            }
-            cc.log(loadingRes.loading_png + "--->");
-            cc.log(results[0]);
-            var logo = new cc.Sprite(loadingRes.loading_png);
-            layer.addChild(logo);
-            logo.x = winSize.width/2;
-            logo.y = winSize.height/2;
-        });
+        //cc.loader.load(loadingRes.loading_png, function(err, results){
+        //    if(err){
+        //        cc.log("Failed to load %s.", loadingRes.loading_png);
+        //        return;
+        //    }
+        //    cc.log(loadingRes.loading_png + "--->");
+        //    cc.log(results[0]);
+        //    var logo = new cc.Sprite(loadingRes.loading_png);
+        //    layer.addChild(logo);
+        //    logo.x = winSize.width/2;
+        //    logo.y = winSize.height/2;
+        //});
 
 
         return true;

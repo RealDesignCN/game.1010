@@ -3,7 +3,7 @@
  */
 game._Config = {
     language : game._Enum.language.en,    // cn or en
-    show_ads : true,
-    debug : true,
+    show_ads: false,
+    debug: false,
 
 };

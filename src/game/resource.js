@@ -3,7 +3,7 @@
 
 
 var loadingRes = {
-    loading_png : "res/" + game._Config.language + "/loading.png"
+    //loading_png : "res/" + game._Config.language + "/loading.png"
 };
 
 var loaderRes = {
@@ -11,7 +11,7 @@ var loaderRes = {
     //loader_png : "res/" + game._Config.language + "/plist/loader.png",
     //loader_bg_jpg : "res/" + game._Config.language + "/jpg/loader_bg.jpg",
     //loading_bar_png : "res/common/loading_bar.png",
-    loading2_png : "res/" + game._Config.language + "/loading2.png",
+    //loading2_png : "res/" + game._Config.language + "/loading2.png",
 };
 
 var res = {
@@ -36,6 +36,6 @@ for (var i in res) {
 
 
 var g_loaderResources = [];
-for (var i in loaderRes) {
-    g_loaderResources.push(loaderRes[i]);
-}
+//for (var i in loaderRes) {
+//    g_loaderResources.push(loaderRes[i]);
+//}

@@ -211,7 +211,7 @@ game.GameLayer = cc.LayerColor.extend({
         for(var i = 0; i < this._matrixObjs.length; i++){
             var mo = this._matrixObjs[i];
             var isTouch = mo.isTouched(pos);
-            if(isTouch && frame.Encode.check()){
+            if (isTouch) {
                 this.takeUp(mo,  pos);
                 break;
             }
@@ -251,7 +251,7 @@ game.GameLayer = cc.LayerColor.extend({
 
         if(0 <= col && col < 10 && 0<= row && row < 10){
 
-            if(this.checkIsCanDown(this._takedObj, col, row) && frame.Encode.check()){
+            if (this.checkIsCanDown(this._takedObj, col, row)) {
                 this.putDown(col, row);
                 return;
             }
@@ -286,7 +286,7 @@ game.GameLayer = cc.LayerColor.extend({
             }
 
             var item = this._getMatrixItem(m_col, m_row);
-            if(item && frame.Encode.check()){
+            if (item) {
                 return false;
             }
 
@@ -335,7 +335,7 @@ game.GameLayer = cc.LayerColor.extend({
         this.checkRemove();
 
 
-        if(this._matrixObjs.length == 0 && frame.Encode.check()){
+        if (this._matrixObjs.length == 0) {
             this.addThreeMatrixObj();
         }else{
             this.checkGameOver();
@@ -380,7 +380,7 @@ game.GameLayer = cc.LayerColor.extend({
                     break;
                 }
             }
-            if(isAll && frame.Encode.check()){
+            if (isAll) {
                 remove_row_list.push(i);
             }
         }
