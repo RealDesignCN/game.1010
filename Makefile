@@ -23,6 +23,6 @@ publish:
 
 github: publish
 	ghp-import -m "make github" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR) -p
-	cd $(BASEDIR); git add .; git commit -m "update web site"; git push origin master
+	git add .; git commit -m "update web site"; git push origin master
 
 .PHONY: help run clean publish github
